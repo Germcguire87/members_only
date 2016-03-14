@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+	has_many :posts
 	has_secure_password
 	before_save { remember_token_encrypt}
 
